@@ -206,26 +206,25 @@ msgstr "Удалить"
 msgid "{0, plural, one {# track} other {# tracks}}"
 msgstr "{0, plural, one {# трек} few {# трека} many {# треков}}"
 
-#: src/components/TrackListHeader.tsx:46
+#: src/components/TrackListHeader.tsx:47
+msgid "TrackNumber"
+msgstr ""
+
+#: src/components/TrackListHeader.tsx:55
 #: src/routes/tracks.$trackID.tsx:87
 msgid "Title"
 msgstr "Заголовок"
 
-#: src/components/TrackListHeader.tsx:53
+#: src/components/TrackListHeader.tsx:62
 #: src/routes/tracks.$trackID.tsx:230
 msgid "Duration"
 msgstr "Длительность"
 
-#: src/components/TrackListHeader.tsx:60
+#: src/components/TrackListHeader.tsx:69
 msgid "Artist"
 msgstr "Исполнитель"
 
-#: src/components/TrackListHeader.tsx:67
-#: src/routes/tracks.$trackID.tsx:98
-msgid "Album"
-msgstr "Альбом"
-
-#: src/components/TrackListHeader.tsx:74
+#: src/components/TrackListHeader.tsx:76
 #: src/routes/tracks.$trackID.tsx:138
 msgid "Genre"
 msgstr "Жанр"
@@ -528,6 +527,10 @@ msgstr "Тёмная"
 #: src/routes/tracks.$trackID.tsx:83
 msgid "Edit \"{0}\""
 msgstr "Редактировать \"{0}\""
+
+#: src/routes/tracks.$trackID.tsx:98
+msgid "Album"
+msgstr "Альбом"
 
 #: src/routes/tracks.$trackID.tsx:109
 msgid "Album Artist"

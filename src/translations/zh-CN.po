@@ -206,26 +206,25 @@ msgstr "移除"
 msgid "{0, plural, one {# track} other {# tracks}}"
 msgstr "{0, plural, one {# 首音轨} other {# 首音轨}}"
 
-#: src/components/TrackListHeader.tsx:46
+#: src/components/TrackListHeader.tsx:47
+msgid "TrackNumber"
+msgstr ""
+
+#: src/components/TrackListHeader.tsx:55
 #: src/routes/tracks.$trackID.tsx:87
 msgid "Title"
 msgstr "标题"
 
-#: src/components/TrackListHeader.tsx:53
+#: src/components/TrackListHeader.tsx:62
 #: src/routes/tracks.$trackID.tsx:230
 msgid "Duration"
 msgstr "时长"
 
-#: src/components/TrackListHeader.tsx:60
+#: src/components/TrackListHeader.tsx:69
 msgid "Artist"
 msgstr "艺术家"
 
-#: src/components/TrackListHeader.tsx:67
-#: src/routes/tracks.$trackID.tsx:98
-msgid "Album"
-msgstr "专辑"
-
-#: src/components/TrackListHeader.tsx:74
+#: src/components/TrackListHeader.tsx:76
 #: src/routes/tracks.$trackID.tsx:138
 msgid "Genre"
 msgstr "流派"
@@ -528,6 +527,10 @@ msgstr "深色"
 #: src/routes/tracks.$trackID.tsx:83
 msgid "Edit \"{0}\""
 msgstr "编辑 \"{0}\""
+
+#: src/routes/tracks.$trackID.tsx:98
+msgid "Album"
+msgstr "专辑"
 
 #: src/routes/tracks.$trackID.tsx:109
 msgid "Album Artist"

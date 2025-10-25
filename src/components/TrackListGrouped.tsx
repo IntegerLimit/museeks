@@ -118,6 +118,7 @@ function TrackListGroup(props: TrackListGroupProps) {
               onPlaybackStart={onPlaybackStart}
               draggable={false}
               simplified={true}
+              includeNumber={false}
               style={{ height: `${rowHeight}px` }} // Figure out virtualization for grouped stuff
             />
           );

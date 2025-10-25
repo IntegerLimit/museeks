@@ -41,6 +41,15 @@ export default function TrackListHeader(props: Props) {
   return (
     <div className={styles.trackListHeader}>
       <TrackListHeaderCell className={styles.cellTrackPlaying} title="&nbsp;" />
+      {enableSort && (
+        <TrackListHeaderCell
+          className={styles.cellTrackNumber}
+          title={t`TrackNumber`}
+          sortBy={enableSort ? 'TrackNumber' : null}
+          icon={getIcon(enableSort, sortBy, sortOrder, 'TrackNumber')}
+          data-testid="tracklist-header-track-number"
+        />
+      )}
       <TrackListHeaderCell
         className={styles.cellTrack}
         title={t`Title`}
@@ -61,13 +70,6 @@ export default function TrackListHeader(props: Props) {
         sortBy={enableSort ? 'Artist' : null}
         icon={getIcon(enableSort, sortBy, sortOrder, 'Artist')}
         data-testid="tracklist-header-artist"
-      />
-      <TrackListHeaderCell
-        className={styles.cellAlbum}
-        title={t`Album`}
-        sortBy={enableSort ? 'Album' : null}
-        icon={getIcon(enableSort, sortBy, sortOrder, 'Album')}
-        data-testid="tracklist-header-album"
       />
       <TrackListHeaderCell
         className={styles.cellGenre}

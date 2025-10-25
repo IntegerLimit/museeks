@@ -29,6 +29,7 @@ type Props = {
   isPlaying?: boolean;
   draggable?: boolean;
   simplified?: boolean;
+  includeNumber?: boolean;
   style?: React.CSSProperties;
 } & TrackRowEvents;
 
@@ -96,6 +97,11 @@ export default function TrackRow(props: Props) {
       <div className={`${styles.cell} ${cellStyles.cellTrackPlaying}`}>
         {props.isPlaying ? <PlayingIndicator /> : null}
       </div>
+      {props.includeNumber && (
+        <div className={`${styles.cell} ${cellStyles.cellTrackNumber}`}>
+          {track.track_no}
+        </div>
+      )}
       <div className={`${styles.cell} ${cellStyles.cellTrack}`}>
         {track.title}
       </div>
@@ -106,9 +112,6 @@ export default function TrackRow(props: Props) {
         <>
           <div className={`${styles.cell} ${cellStyles.cellArtist}`}>
             {track.artists.join(', ')}
-          </div>
-          <div className={`${styles.cell} ${cellStyles.cellAlbum}`}>
-            {track.album}
           </div>
           <div className={`${styles.cell} ${cellStyles.cellGenre}`}>
             {track.genres.join(', ')}

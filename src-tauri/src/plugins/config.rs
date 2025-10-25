@@ -28,6 +28,7 @@ pub enum SortBy {
     Title,
     Duration,
     Genre,
+    TrackNumber,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, TS)]
@@ -91,7 +92,7 @@ impl Config {
             audio_shuffle: false,
             audio_repeat: Repeat::None,
             default_view: DefaultView::Library,
-            library_sort_by: SortBy::Artist,
+            library_sort_by: SortBy::TrackNumber,
             library_sort_order: SortOrder::Asc,
             library_folders: vec![],
             library_autorefresh: false,

@@ -140,6 +140,7 @@ export default function TrackListDefault(props: Props) {
                   onContextMenu={onContextMenu}
                   onPlaybackStart={onPlaybackStart}
                   draggable={reorderable}
+                  includeNumber={isSortEnabled}
                   style={{
                     position: 'absolute',
                     left: 0,
