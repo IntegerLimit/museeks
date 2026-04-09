@@ -22,6 +22,11 @@ export default function TrackListHeader({ sortable = true }: Props) {
         sortBy={null}
       />
       <TrackListHeaderCell
+        xstyle={styles.cellTrackNumber}
+        title={t`TrackNumber`}
+        sortBy={sortable ? 'TrackNumber' : null}
+      />
+      <TrackListHeaderCell
         xstyle={styles.cellTrack}
         title={t`Title`}
         sortBy={sortable ? 'Title' : null}
@@ -36,11 +41,11 @@ export default function TrackListHeader({ sortable = true }: Props) {
         title={t`Artist`}
         sortBy={sortable ? 'Artist' : null}
       />
-      <TrackListHeaderCell
+      {/*<TrackListHeaderCell
         xstyle={styles.cellAlbum}
         title={t`Album`}
         sortBy={sortable ? 'Album' : null}
-      />
+      />*/}
       <TrackListHeaderCell
         xstyle={styles.cellGenre}
         title={t`Genre`}
@@ -66,6 +71,10 @@ const styles = stylex.create({
   cellTrackPlaying: {
     width: '30px',
   },
+  cellTrackNumber: {
+    width: '80px',
+    flexShrink: 0,
+  },
   cellTrack: {
     flexGrow: 1,
     flexShrink: 1,
@@ -82,6 +91,6 @@ const styles = stylex.create({
     width: '20%',
   },
   cellGenre: {
-    width: '20%',
+    width: '15%',
   },
 });

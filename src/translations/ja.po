@@ -273,25 +273,24 @@ msgid "Track list sorting options"
 msgstr ""
 
 #: src/components/TrackListHeader.tsx:26
+msgid "TrackNumber"
+msgstr ""
+
+#: src/components/TrackListHeader.tsx:31
 #: src/routes/tracks.$trackID.tsx:88
 msgid "Title"
 msgstr "タイトル"
 
-#: src/components/TrackListHeader.tsx:31
+#: src/components/TrackListHeader.tsx:36
 #: src/routes/tracks.$trackID.tsx:241
 msgid "Duration"
 msgstr "再生時間"
 
-#: src/components/TrackListHeader.tsx:36
+#: src/components/TrackListHeader.tsx:41
 msgid "Artist"
 msgstr "アーティスト"
 
-#: src/components/TrackListHeader.tsx:41
-#: src/routes/tracks.$trackID.tsx:99
-msgid "Album"
-msgstr "アルバム"
-
-#: src/components/TrackListHeader.tsx:46
+#: src/components/TrackListHeader.tsx:51
 #: src/routes/tracks.$trackID.tsx:139
 msgid "Genre"
 msgstr "ジャンル"
@@ -602,6 +601,10 @@ msgstr "ダーク"
 #: src/routes/tracks.$trackID.tsx:84
 msgid "Edit \"{0}\""
 msgstr "「{0}」を編集"
+
+#: src/routes/tracks.$trackID.tsx:99
+msgid "Album"
+msgstr "アルバム"
 
 #: src/routes/tracks.$trackID.tsx:110
 msgid "Album Artist"

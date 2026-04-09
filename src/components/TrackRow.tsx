@@ -103,6 +103,11 @@ export default function TrackRow(props: Props) {
       <div {...stylex.props(cellStyles.cell, cellStyles.trackPlaying)}>
         {props.isPlaying ? <PlayingIndicator /> : null}
       </div>
+      {props.simplified !== true && (
+          <div {...stylex.props(cellStyles.cell, cellStyles.trackNumber)}>
+            {track.track_no}
+          </div>
+      )}
       <div {...stylex.props(cellStyles.cell, cellStyles.title)}>
         <span {...stylex.props(cellStyles.titleText)}>{track.title}</span>
         {props.showArtistInTitle === true && track.artists.length > 0 && (
@@ -126,9 +131,9 @@ export default function TrackRow(props: Props) {
           <div {...stylex.props(cellStyles.cell, cellStyles.artist)}>
             {track.artists.join(', ')}
           </div>
-          <div {...stylex.props(cellStyles.cell, cellStyles.album)}>
+          {/*<div {...stylex.props(cellStyles.cell, cellStyles.album)}>
             {track.album}
-          </div>
+          </div>*/}
           <div {...stylex.props(cellStyles.cell, cellStyles.genre)}>
             {track.genres.join(', ')}
           </div>
@@ -206,6 +211,10 @@ const cellStyles = stylex.create({
     width: '30px',
     flexShrink: 0,
   },
+  trackNumber: {
+    width: '80px',
+    flexShrink: 0,
+  },
   title: {
     flexGrow: 1,
     flexShrink: 1,
@@ -244,7 +253,7 @@ const cellStyles = stylex.create({
     flexShrink: 0,
   },
   genre: {
-    width: '20%',
+    width: '15%',
     flexShrink: 0,
   },
   rightAligned: {

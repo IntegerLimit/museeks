@@ -104,6 +104,7 @@ const SORT_ORDERS: Record<SortBy, SortConfig> = {
   Duration: ['duration', ARTIST, ALBUM, 'disk_no', 'track_no'],
   Album: [ALBUM, ARTIST, 'disk_no', 'track_no'],
   Genre: [GENRE, ARTIST, ALBUM, 'disk_no', 'track_no'],
+  TrackNumber: ['track_no', ARTIST, ALBUM, 'disk_no'],
 };
 
 export function getSortOrder(sortBy: SortBy): SortConfig {
